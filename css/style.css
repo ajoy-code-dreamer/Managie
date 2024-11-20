@@ -4,8 +4,8 @@
 /* ============ css variables ============= */
 :root {
   /* === font family === */
-  --oswald-font: "Oswald", sans-serif;
-  --barlow-font: "Barlow Condensed", sans-serif;
+  --inter-font: "Inter", sans-serif;
+  --grotesk-font: "Space Grotesk", sans-serif;
   /* === font family === */
   /* === font weight === */
   --light-weight: 300;
@@ -16,11 +16,11 @@
 
   /* === font weight === */
   /* === colors === */
+  --transparent-clr: transparent;
   --white-clr: #fff;
-  --secondary-text-clr: #dddddd;
-  --primary-clr: #ff4655;
-  --primary-bg-clr: #121212;
-  --secondary-bg-clr: #191919;
+  --primary-text-clr: #232323;
+  /* --primary-bg-clr: #121212;
+  --secondary-bg-clr: #191919; */
   /* === colors === */
   /* === method === */
   --transition: all 0.3s linear;
@@ -57,6 +57,7 @@ menu,
 div {
   margin: 0;
   padding: 0;
+  line-height: 0.8;
 }
 img {
   vertical-align: middle;
@@ -67,28 +68,66 @@ img {
 }
 /* ============= common css end here ================ */
 /* ================= navbar css start here ============== */
-nav{
+nav {
   padding: 23px 0;
   background-color: #394792;
 }
-.nav_wrapper{
+.nav_wrapper {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
 }
-.nav_menu_wrapper{
+.nav_menu_wrapper {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  /* justify-items: end; */
-  justify-content: end;
-  
+  grid-template-columns: repeat(4, auto);
+  gap: 60px;
+  justify-content: start;
 }
-.nav_menu_wrapper ul{
+.nav_menu_wrapper ul {
   display: contents;
 }
-
-.nav_link{
-  color: white;
+.nav_link {
+  color: var(--white-clr);
+  font-family: var(--inter-font);
+  font-size: 18px;
+  font-weight: var(--regular-weight);
+  line-height: normal;
+  letter-spacing: -0.81px;
+}
+.brand_logo {
+  justify-self: center;
+  width: 131px;
+  height: 32px;
+}
+.brand_logo img {
+  width: 100%;
+  height: 100%;
+}
+.nav_btn_wrapper {
+  justify-self: end;
+}
+.nav_btn {
+  padding: 16px 40px;
+  color: var(--white-clr);
+  font-family: var(--inter-font);
+  font-size: 18px;
+  font-weight: var(--medium-weight);
+  line-height: normal;
+  letter-spacing: -0.81px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  border: 1px solid var(--transparent-clr);
+}
+.nav_btn:hover {
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 /* ================= navbar css end here ============== */
 
