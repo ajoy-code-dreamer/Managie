@@ -66,3 +66,31 @@ img {
   margin: 0 auto;
 }
 /* ============= common css end here ================ */
+/* ================= navbar css start here ============== */
+nav{
+  padding: 23px 0;
+  background-color: #394792;
+}
+.nav_wrapper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+}
+.nav_menu_wrapper{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  /* justify-items: end; */
+  justify-content: end;
+  
+}
+.nav_menu_wrapper ul{
+  display: contents;
+}
+
+.nav_link{
+  color: white;
+}
+/* ================= navbar css end here ============== */
+
+/* ============== section start here ============== */
+/* ============== section start here ============== */
