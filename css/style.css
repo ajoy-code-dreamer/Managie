@@ -292,8 +292,63 @@ nav {
 }
 /* ============== banner section end here ============== */
 
-/* ============== section start here ============== */
-/* ============== section end here ============== */
+/* ============== management section start here ============== */
+#management {
+  padding: 100px 0;
+}
+.management_section_heading {
+  color: var(--primary-text-clr);
+  text-align: center;
+  font-family: var(--grotesk-font);
+  font-size: 48px;
+  font-weight: var(--medium-weight);
+  line-height: 140%;
+  letter-spacing: -2.4px;
+  position: relative;
+  margin-bottom: 64px;
+}
+.management_heading_shape {
+  position: absolute;
+  right: 295px;
+  top: 40px;
+}
+.management_item_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 32px;
+}
+.management_item {
+  max-width: 379px;
+}
+.management_item_image {
+  width: 100%;
+  height: 378px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  margin-bottom: 24px;
+}
+.management_item h3 {
+  color: var(--primary-text-clr);
+  font-family: var(--grotesk-font);
+  font-size: 24px;
+  font-weight: var(--medium-weight);
+  line-height: 140%;
+  letter-spacing: -1.2px;
+  margin-bottom: 16px;
+}
+.management_item p {
+  color: #757575;
+  font-family: var(--inter-font);
+  font-size: 18px;
+  font-weight: var(--regular-weight);
+  line-height: 170%;
+  letter-spacing: -0.9px;
+}
+/* ============== management section end here ============== */
 
 /* ============== section start here ============== */
 /* ============== section end here ============== */
