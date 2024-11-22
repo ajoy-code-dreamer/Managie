@@ -350,8 +350,94 @@ nav {
 }
 /* ============== management section end here ============== */
 
-/* ============== section start here ============== */
-/* ============== section end here ============== */
+/* ============== difference section start here ============== */
+#difference {
+  padding: 100px 0 90px;
+}
+.difference_section_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 117px;
+}
+
+.difference_section_heading {
+  color: var(--primary-text-clr);
+  font-family: var(--grotesk-font);
+  font-size: 48px;
+  font-weight: var(--medium-weight);
+  line-height: 140%;
+  letter-spacing: -2.4px;
+  margin-bottom: 24px;
+  position: relative;
+}
+.difference_heading_shape {
+  position: absolute;
+  right: 25px;
+  top: 40px;
+}
+.difference_section_details {
+  color: var(--primary-text-clr);
+  font-family: var(--inter-font);
+  font-size: 18px;
+  font-weight: var(--regular-weight);
+  line-height: 170%;
+  letter-spacing: -0.81px;
+  margin-bottom: 32px;
+}
+.difference_list_wrapper {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 24px;
+}
+.difference_list_wrapper li {
+  width: 100%;
+  padding: 23px 23px 23px 76px;
+  color: #000;
+  font-family: var(--inter-font);
+  font-size: 18px;
+  font-weight: var(--medium-weight);
+  line-height: 170%;
+  letter-spacing: -0.81px;
+  border-radius: 16px;
+  border: 1px solid rgba(35, 35, 35, 0.16);
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  position: relative;
+}
+.difference_list_wrapper li span {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: #ffe8bb;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  display: inline-block;
+  color: #f84c02;
+  font-size: 20px;
+  text-align: center;
+  line-height: 44px;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.difference_list_wrapper li:nth-child(2) span {
+  background-color: #c2ffd0;
+  color: #05b857;
+}
+.difference_list_wrapper li:nth-child(3) span {
+  background-color: #cbf3ff;
+  color: #155cb5;
+}
+/* ============== difference section end here ============== */
 
 /* ============== section start here ============== */
 /* ============== section end here ============== */
