@@ -823,9 +823,11 @@ nav {
   color: #325b97;
 }
 
-/* ============== managing section end here ============== */
+/* ============== package section end here ============== */
+/* ============== managing section start here ============== */
 #managing {
   padding: 100px 0;
+  background-color: #F9FAFF;
 }
 .managing_content_wrapper {
   padding: 100px 64px 104px;
@@ -888,8 +890,70 @@ nav {
   right: 0;
   bottom: 0;
 }
-/* ============== managing section start here ============== */
-/* ============== section end here ============== */
+/* ============== managing section end here ============== */
 
-/* ============== section start here ============== */
-/* ============== section end here ============== */
+/* ============== footer section start here ============== */
+footer {
+  padding: 100px 0;
+}
+.footer_item_wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: space-between;
+  gap: 113px;
+  margin-bottom: 16px;
+}
+.footer_logo {
+  width: 238px;
+  height: 58px;
+  overflow: hidden;
+  object-fit: cover;
+  margin-bottom: 24px;
+}
+.footer_section_heading {
+  width: 277px;
+  color: #325b97;
+  font-family: var(--inter-font);
+  font-size: 18px;
+  font-weight: var(--medium-weight);
+  line-height: 150%;
+  letter-spacing: -0.9px;
+}
+.footer_item_heading {
+  color: var(--primary-text-clr);
+  font-family: var(--inter-font);
+  font-size: 24px;
+  font-weight: var(--semi-bold-weight);
+  line-height: normal;
+  letter-spacing: -1.2px;
+  margin-bottom: 32px;
+}
+.footer_quicklink {
+  color: var(--primary-text-clr);
+  font-family: var(--inter-font);
+  font-size: 18px;
+  font-weight: var(--regular-weight);
+  line-height: normal;
+  letter-spacing: -0.9px;
+  margin-bottom: 16px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.footer_quicklink:hover{
+  color: #325b97;
+}
+.footer_copyright_wrapper {
+  padding-top: 32px;
+  border-top: 1px solid rgba(18, 18, 18, 0.16);
+}
+.footer_copyright_text {
+  color: var(--primary-text-clr);
+  font-family: var(--inter-font);
+  font-size: 18px;
+  font-weight: var(--regular-weight);
+  line-height: normal;
+}
+/* ============== footer section end here ============== */
