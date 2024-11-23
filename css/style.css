@@ -439,8 +439,164 @@ nav {
 }
 /* ============== difference section end here ============== */
 
-/* ============== section start here ============== */
-/* ============== section end here ============== */
+/* ============== newsletter section start here ============== */
+#newsletter {
+  padding: 100px 0 130px;
+  background-color: #f9faff;
+}
+.newsletter_heading_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: end;
+  margin-bottom: 64px;
+}
+.newsletter_section_heading {
+  color: var(--primary-text-clr);
+  font-family: var(--grotesk-font);
+  font-size: 48px;
+  font-weight: var(--medium-weight);
+  line-height: 140%;
+  letter-spacing: -2.4px;
+  margin-bottom: 32px;
+  display: inline-block;
+  position: relative;
+}
+.newsletter_heading_shape {
+  position: absolute;
+  right: 138px;
+  top: 36px;
+}
+.newsletter_section_details {
+  width: 558px;
+  color: var(--primary-text-clr);
+  font-family: var(--inter-font);
+  font-size: 18px;
+  font-weight: var(--regular-weight);
+  line-height: 170%;
+  letter-spacing: -0.81px;
+}
+.newsletter_arrows_wrapper {
+  justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 24px;
+}
+.newsletter_arrow_next {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: rgba(50, 90, 151, 0.1);
+  font-size: 22px;
+  text-align: center;
+  line-height: 72px;
+  color: #757575;
+  cursor: pointer;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.newsletter_arrow_next:hover {
+  background-color: rgba(50, 90, 151);
+  color: var(--white-clr);
+}
+.newsletter_item_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 24px;
+}
+.newsletter_item {
+  padding: 48px;
+  background-color: var(--white-clr);
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+}
+.newsletter_item_review {
+  color: #000;
+  font-family: var(--inter-font);
+  font-size: 24px;
+  font-weight: var(--medium-weight);
+  line-height: normal;
+  letter-spacing: -1.08px;
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 16px;
+  align-items: center;
+  justify-content: start;
+}
+.newsletter_item_review span {
+  font-size: 16px;
+  color: #ffc236;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 8px;
+}
+.newsletter_feedback_details {
+  color: #757575;
+  font-family: var(--inter-font);
+  font-size: 18px;
+  font-weight: var(--regular-weight);
+  line-height: 170%;
+  letter-spacing: -0.81px;
+  margin-bottom: 24px;
+  display: inline-block;
+}
+.newsletter_user_wrapper {
+  margin-top: 24px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+}
+.newsletter_user_wrapper::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: rgba(35, 35, 35, 0.16);
+  width: 100%;
+  left: 0;
+  top: -24px;
+}
+.newsletter_user_image {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #d9d9d9;
+  overflow: hidden;
+  object-fit: cover;
+}
+.newsletter_user_name {
+  color: var(--primary-text-clr);
+  font-family: var(--inter-font);
+  font-size: 18px;
+  font-weight: var(--medium-weight);
+  line-height: 170%;
+  letter-spacing: -0.81px;
+}
+.newsletter_user_location {
+  color: #757575;
+  font-family: var(--inter-font);
+  font-size: 18px;
+  font-weight: var(--regular-weight);
+  line-height: 170%;
+  letter-spacing: -0.81px;
+}
+/* ============== newsletter section end here ============== */
 
 /* ============== section start here ============== */
 /* ============== section end here ============== */
