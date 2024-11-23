@@ -97,6 +97,24 @@ nav {
   font-weight: var(--regular-weight);
   line-height: normal;
   letter-spacing: -0.81px;
+  position: relative;
+}
+.nav_link::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: var(--white-clr);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.nav_link:hover::after {
+  width: 105%;
 }
 .brand_logo {
   justify-self: center;
@@ -597,6 +615,215 @@ nav {
   letter-spacing: -0.81px;
 }
 /* ============== newsletter section end here ============== */
+
+/* ============== section start here ============== */
+#package {
+  padding: 100px 0;
+}
+.package_section_heading {
+  color: var(--primary-text-clr);
+  font-family: var(--grotesk-font);
+  font-size: 48px;
+  font-weight: var(--medium-weight);
+  line-height: 140%;
+  letter-spacing: -2.4px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.package_section_details {
+  color: var(--primary-text-clr);
+  font-family: var(--inter-font);
+  font-size: 18px;
+  font-weight: var(--regular-weight);
+  line-height: 170%;
+  letter-spacing: -0.81px;
+  text-align: center;
+  margin-bottom: 64px;
+}
+.package_item_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 32px;
+}
+.package_item {
+  padding: 32px;
+  width: 379px;
+  border-radius: 32px;
+  border: 1px solid rgba(35, 35, 35, 0.16);
+  background: var(--white-clr);
+  cursor: pointer;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.package_item_name {
+  display: inline-block;
+  padding: 6px 24px 6px 68px;
+  border-radius: 30px;
+  border: 1px solid rgba(35, 35, 35, 0.16);
+  color: var(--primary-text-clr);
+  font-family: var(--grotesk-font);
+  font-size: 32px;
+  font-weight: var(--medium-weight);
+  line-height: 140%;
+  letter-spacing: -1.6px;
+  position: relative;
+  margin-bottom: 28px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.package_item_name i {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  font-size: 28px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.package_item_price {
+  color: var(--primary-text-clr);
+  font-family: var(--grotesk-font);
+  font-size: 48px;
+  font-weight: var(--medium-weight);
+  line-height: 140%;
+  letter-spacing: -2.4px;
+  margin-bottom: 16px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.package_item_price span {
+  color: #757575;
+  font-family: var(--inter-font);
+  font-size: 24px;
+  font-weight: var(--medium-weight);
+  line-height: 140%;
+  letter-spacing: -1.2px;
+  margin-left: 6px;
+}
+.package_item_plan {
+  color: #757575;
+  font-family: var(--inter-font);
+  font-size: 18px;
+  font-weight: var(--regular-weight);
+  line-height: 140%;
+  letter-spacing: -0.9px;
+  margin-bottom: 40px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.package_item_list_wrapper {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.package_item_list_wrapper li {
+  color: var(--primary-text-clr);
+  font-family: var(--inter-font);
+  font-size: 18px;
+  font-weight: var(--regular-weight);
+  line-height: 140%;
+  letter-spacing: -0.9px;
+  padding-left: 40px;
+  position: relative;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.package_item_list_wrapper li i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #155cb5;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.package_item_btn {
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+  border-radius: 100px;
+  background: #325b97;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  color: var(--white-clr);
+  font-family: var(--inter-font);
+  font-size: 18px;
+  font-weight: var(--medium-weight);
+  line-height: 140%;
+  letter-spacing: -0.9px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.package_item:first-child .package_item_list_wrapper li:nth-child(4) {
+  color: #8e8e8e;
+}
+.package_item:first-child .package_item_list_wrapper li:nth-child(5) {
+  color: #8e8e8e;
+}
+.package_item:first-child .package_item_list_wrapper li:nth-child(4) i {
+  color: #8e8e8e;
+}
+.package_item:first-child .package_item_list_wrapper li:nth-child(5) i {
+  color: #8e8e8e;
+}
+.package_item:hover {
+  background-color: #325b97;
+}
+.package_item:hover .package_item_name {
+  color: var(--white-clr);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+.package_item:hover .package_item_price,
+.package_item:hover .package_item_list_wrapper li,
+.package_item:hover .package_item_list_wrapper li i {
+  color: var(--white-clr);
+}
+.package_item:hover .package_item_price span,
+.package_item:hover .package_item_plan {
+  color: var(--white-clr);
+  opacity: 0.5;
+}
+.package_item:hover .package_item_btn {
+  background-color: var(--white-clr);
+  color: #325b97;
+}
+
+/* ============== section end here ============== */
 
 /* ============== section start here ============== */
 /* ============== section end here ============== */
